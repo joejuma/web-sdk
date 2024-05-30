@@ -1,5 +1,4 @@
 /* Deps */
-const fs = require("fs");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const path = require("path");
 const webpack = require("webpack");
@@ -81,12 +80,12 @@ WebpackConfig.Core = {
     },
     module: {
         rules:[
-            Loaders.Babel,
-            Loaders.Style,
-            Loaders.TypeScript
+            WebpackConfig.Loaders.Babel,
+            WebpackConfig.Loaders.Style,
+            WebpackConfig.Loaders.TypeScript
         ]
     },
-    plugins:[ ...Plugins ],
+    plugins:[ ...WebpackConfig.Plugins ],
     watch: true
 };
 

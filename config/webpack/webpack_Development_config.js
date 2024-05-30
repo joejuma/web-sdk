@@ -1,4 +1,5 @@
 /* Deps */
+const path = require("path");
 const WebpackConfig = require("./webpack_Core_config.js");
 
 /* Constants */
@@ -13,14 +14,14 @@ WebpackConfig.DevelopmentServer = {
 };
 
 WebpackConfig.Development = {
-    ...Core,
+    ...WebpackConfig.Core,
     output:{
-        ...Core.output,
+        ...WebpackConfig.Core.output,
         path: DEVELOPMENT_BUILD_DIRECTORY
     },
     mode: "development",
     devtool: "source-map",
-    devServer: DevelopmentServer
+    devServer: WebpackConfig.DevelopmentServer
 };
 
 /* Exports */

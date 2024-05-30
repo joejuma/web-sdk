@@ -12,7 +12,7 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
 
-import { Application } from "./app/Application_component.jsx";
+import Application from "./app/Application_component.jsx";
 
 /* Main */
 const rootElement = document.getElementById("root");
