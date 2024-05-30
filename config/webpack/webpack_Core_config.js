@@ -12,12 +12,11 @@ const BUILD_DIRECTORY = path.resolve(ROOT_DIRECTORY, "build");
 const CONFIG_DIRECTORY = path.resolve(ROOT_DIRECTORY, "config");
 const SOURCE_DIRECTORY = path.resolve(ROOT_DIRECTORY, "src");
 const TEMPLATE_DIRECTORY = path.resolve(SOURCE_DIRECTORY, "templates");
-const TYPESCRIPT_CONFIG_DIRECTORY = path.resolve(CONFIG_DIRECTORY, "typescript");
 
 // File Constants
 const MAIN_FILE = path.resolve(SOURCE_DIRECTORY, "index.js");
 const TEMPLATE_FILE = path.resolve(TEMPLATE_DIRECTORY, "index.html");
-const TYPESCRIPT_CONFIG_FILE = path.resolve(TYPESCRIPT_CONFIG_DIRECTORY, ".tsconfig.json");
+const TYPESCRIPT_CONFIG_FILE = path.resolve(CONFIG_DIRECTORY, "typescript", "tsconfig.json");
 
 /* Namespace */
 const WebpackConfig = {};
