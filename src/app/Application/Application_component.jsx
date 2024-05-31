@@ -1,14 +1,12 @@
 /* Deps */
 import React from "react";
-// import Router from "";
-// import style sheet.
+import Router from "../Router/Router_component.jsx";
+import "../../style/global.less";
 
 /* Components */
 const Application = () => {
     return(
-        <div>
-            <h1>Hello World!</h1>
-        </div>
+        <Router />
     );
 };
 

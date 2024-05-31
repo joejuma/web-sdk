@@ -12,12 +12,12 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
 
-import Application from "./app/Application_component.jsx";
+import App from "./app";
 
 /* Main */
 const rootElement = document.getElementById("root");
 if(rootElement !== undefined){
-    createRoot(rootElement).render(<Application/>);
+    createRoot(rootElement).render(<App.Application/>);
 }
 else{
     console.error("[ERROR] in index.js: rootElement was undefined.");
