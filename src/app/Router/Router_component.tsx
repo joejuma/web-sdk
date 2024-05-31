@@ -1,11 +1,11 @@
 /* Deps */
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Pages from "../Pages/pages.jsx";
+import Pages from "../Pages/pages";
 
 /* Components */
 const Router = () => {
-    /*
+  /*
         # Router (component)
 
         ## Description
@@ -14,14 +14,15 @@ const Router = () => {
         interface.
     */
 
-    return(
-        <BrowserRouter>
-            <Routes>
-                <Route path="/" element={<Pages.Errors.NotFound/>}/>
-                <Route path="*" element={<Pages.Errors.NotFound/>}/>
-            </Routes>
-        </BrowserRouter>
-    );
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Pages.Errors.NotFound />} />
+        <Route path="*" element={<Pages.Errors.NotFound />} />
+        <Route path="/test" element={<h1>AAAAA</h1>} />
+      </Routes>
+    </BrowserRouter>
+  );
 };
 
 /* Exports */

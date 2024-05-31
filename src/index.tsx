@@ -16,9 +16,8 @@ import App from "./app";
 
 /* Main */
 const rootElement = document.getElementById("root");
-if(rootElement !== undefined){
-    createRoot(rootElement).render(<App.Application/>);
+if (!!rootElement) {
+  createRoot(rootElement).render(<App.Application />);
+} else {
+  console.error("[ERROR] in index.js: rootElement was undefined.");
 }
-else{
-    console.error("[ERROR] in index.js: rootElement was undefined.");
-};
