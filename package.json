@@ -2,7 +2,7 @@
   "name": "web-sdk",
   "version": "1.0.0",
   "description": "A web application template project and development library.",
-  "main": "./src/index.js",
+  "main": "./src/index.tsx",
   "directories": {
     "doc": "docs"
   },
