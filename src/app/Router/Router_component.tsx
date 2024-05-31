@@ -5,7 +5,7 @@ import Pages from "../Pages/pages";
 
 /* Components */
 const Router = () => {
-  /*
+	/*
         # Router (component)
 
         ## Description
@@ -19,7 +19,6 @@ const Router = () => {
       <Routes>
         <Route path="/" element={<Pages.Errors.NotFound />} />
         <Route path="*" element={<Pages.Errors.NotFound />} />
-        <Route path="/test" element={<h1>AAAAA</h1>} />
       </Routes>
     </BrowserRouter>
   );
