@@ -8,7 +8,8 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "webpack-dev-server --config ./config/webpack/webpack_Development_config.js"
+    "dev": "webpack-dev-server --config ./config/webpack/webpack_Development_config.js",
+    "release": ""
   },
   "author": "Joseph Juma",
   "license": "ISC",
